@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://192.168.1.70/jquery.js">
+</script> 
+<link href="https://192.168.1.70/glv.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="setInterval('check()', 100)">
+<div class="container">
+<h2 id = "nameVm"></h2>
+<p>Specificare un azione da eseguire sulla macchina virtuale.</p>
+<hr><br>
+<a href="https://192.168.1.70/interface.html">Gestione Macchine Virtuali</a>
+</div><br>
+</div><br>
+<div class="container">
+<div id="campoVm"></div><br>
+<div class="row">
+<table>
+<tr><td>
+<input id="submitRun" onclick="submitRun();" type="button" value="Avvia Macchina Virtuale">
+</td>
+<td></td>
+<td></td>
+<td>
+<input id="submitShut" onclick="submitShut();" type="button" value="Arresta Macchina Virtuale">
+</td>
+<td></td>
+<td></td>
+<td>
+<input id="submitConsole" onclick="submitConsole();" type="button" value="Console Grafica">
+</td>
+</tr>
+</table>
+<br><br><b>Operazioni Disponibili</b><hr><br>
+<table>
+<tr><td>
+<input id="submitDelete" onclick="submitDelete();" type="button" value="Elimina Macchina Virtuale">
+</td></tr>
+</table>
+<br><br><b>Deploy Macchina virtuale</b><hr><br>
+<table>
+<tr><td>
+<input id="submitDeploy" onclick="submitDeploy();" type="button" value="Pannello Deploy">
+</td></tr>
+</table>
+</div>
+</div>
+<br>
+<div class="containerLog">
+<div class="row">
+<div class="col-75">
+<p id="textLog"><--Nessuna azione in corso--></p>
+</div>
+</div>
+</div>
+<script src="https://192.168.1.70/panelVm.js"></script>
+</body>
+</html>

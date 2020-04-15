@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://192.168.1.70/jquery.js"></script> 
+<link href="glv.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="container">
+<h2>Gestione Macchine Virtuali</h2>
+</div><br>
+
+<div class="container">
+<b>Nuova Macchina Virtuale</b><hr><br>
+Creazione di una nuova macchina virtuale personalizzata.<br><br>
+<input id="submitCreate" onclick="submitCreate();" type="button" value="Crea Macchina Virtuale">
+</div><br>
+<br>
+<div class="container">
+<b>Lista Macchine Virtuali</b><hr><br>
+Elenco delle macchine virtuali presenti.<br><br>
+<input id="submitList" onclick="submitList();" type="button" value="Lista Macchine Virtuali">
+</div><br>
+<br>
+<div class="container">
+<b>Console | Virt-Manager</b><hr><br>
+# <i>yum install virt-manager</i> (Fedora)<br><br>
+# <i>apt-get install virt-manager</i> (Debian)<br><br>
+<table><tr><td>
+<a href="https://192.168.1.70/virt-viewer-x86-7.0.msi">Winx86 MSI</a> (Windows 32 bit) |
+<td/><td>
+<a href="https://192.168.1.70/virt-viewer-x64-7.0.msi">Winx64 MSI</a> (Windows 64 bit)
+</td></tr>
+</table>
+</div>
+<script type="text/javascript">
+function submitCreate() {
+window.location.href = 'https://192.168.1.70/createVm.html';
+}
+function submitList() {
+window.location.href = 'https://192.168.1.70/listVms.html';
+}
+</script>
+</body>
+</html>

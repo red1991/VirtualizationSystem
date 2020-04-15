@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://192.168.1.70/jquery.js"></script> 
+<link href="glv.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="container">
+<h2>Nuova Macchina Virtuale</h2>
+<p>Specificare le caratteristiche della macchina virtuale che si vuole creare.</p>
+<hr><br>
+<a href="https://192.168.1.70/interface.html">Gestione Macchine Virtuali</a>
+</div><br>
+
+<div class="container">
+<form name="formAddVm">
+<div class="row">
+<div class="col-25">
+<label><b>Informazioni di base</b></label>
+</div>
+</div> 
+<hr><br>    
+<div class="row">
+<div class="col-25">
+<label>Nome Macchina Virtuale</label>
+</div>
+<div class="col-75">
+<input id="textNome" type="text" placeholder="Nome Macchina Virtuale...">
+</div>
+</div>  
+<div class="row">
+<div class="col-25">
+<label>Descrizione Macchina Virtuale</label>
+</div>
+<div class="col-75">
+<input id="textDescrizione" type="text" placeholder="Descrizione Macchina Virtuale...">
+</div>
+</div>  
+<div class="row">
+<div class="col-25">
+<label>Template da Utilizzare</label>
+</div>
+<div class="col-75">
+<select name="selectTemplate" onchange="selectProgrammi()";></select>
+</div>
+</div>   
+<div class="row">
+<div class="col-25">
+<label>Dimensione RAM (in GB)</label>
+</div>
+<div class="col-75">
+<input id="textDimensioneRam" type="text" value="2" placeholder="Dimensione RAM...">
+</div>
+</div><br>
+<div class="row">
+<div class="col-25">
+<label><b>Personalizzazione</b></label>
+</div>
+</div> 
+<hr><br>
+<div class="row">
+<div class="col-75">
+<label>Selezionare il contenuto personalizzato della macchina virtuale</label>
+</div>
+</div>
+<div class="row">
+<div class="col-75">
+<input type="checkbox" id="checkCB">Code Blocks
+<input type="checkbox" id="checkLO">Libre Office
+</div>
+</div><br>
+<div class="row">
+<div class="col-25">
+<label><b>Hostname</b></label>
+</div>
+</div>
+<hr><br>
+<div class="row">
+<div class="col-25">
+<label>Hostname Macchina Virtuale</label>
+</div>
+<div class="col-75">
+<input id="textNomeHost" type="text" placeholder="Hostname Macchina Virtuale...">
+</div>
+</div><br>
+<div class="row">
+<div class="col-25">
+<label><b>Operazioni Disponibili</b></label>
+</div>
+</div> 
+<hr><br>
+<div class="row">
+<input id="submitCreate" type="button" value="Crea Macchina Virtuale">
+</div>
+</form>
+</div><br>
+<div class="containerLog">
+<div class="row">
+<div class="col-75">
+<p id="textLog"><--Nessuna azione in corso--></p>
+</div>
+</div>
+</div>
+<script src="https://192.168.1.70/elaborazioneMV.js"></script> 
+<script src="https://192.168.1.70/MV.js"></script> 
+<script src="https://192.168.1.70/Template.js"></script> 
+</body>
+</html>

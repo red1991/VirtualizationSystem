@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://192.168.1.70/jquery.js">
+</script> 
+<link href="https://192.168.1.70/glv.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+<h2 id = "nameVm"></h2>
+<p>Specificare un azione da eseguire sulla macchina virtuale.</p>
+<hr><br>
+<a href="https://192.168.1.70/interface.html">Gestione Macchine Virtuali</a>
+</div><br>
+</div><br>
+<div class="container">
+<div id="campoVm"></div><br>
+<div class="row">
+<input id="submitDeploy" onclick="submitDeploy();" type="button" value="Deploy Macchina Virtuale">
+</div>
+</div>
+<br>
+<div class="containerLog">
+<div class="row">
+<div class="col-75">
+<p id="textLog"><--Nessuna azione in corso--></p>
+</div>
+</div>
+</div>
+<script src="https://192.168.1.70/elaborazionePool.js"></script> 
+<script src="https://192.168.1.70/Pool.js"></script> 
+</body>
+</html>
